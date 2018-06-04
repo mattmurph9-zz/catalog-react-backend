@@ -1,7 +1,7 @@
 {
 	"mysql":
 		{
-			"host": "localhost",
+			"host": "127.0.0.1",
 			"user_name": "matt",
 			"password": "matt1234",
 			"database_name": "catalog"
