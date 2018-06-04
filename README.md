@@ -5,9 +5,14 @@
 - Clone this repository
 
 ## Environment Setup
-- Run these commands
+- cd to cloned repository
+- Setup and start virtual environment
 ```
-cd catalog-react-backend
+virtualenv venv
+. venv/bin/activate
+```
+- Install requirements
+```
 pip install -r req.txt
 pip install PyJWT --upgrade
 ```
