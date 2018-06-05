@@ -17,6 +17,7 @@ SECRET = 'matt'
 # 3. Edit item name and/or description
 # 4. Add new item
 
+
 # 1. Get item information
 @item_api.route('/catalog/<string:category_name>/<string:item_name>', methods=['GET'])
 def get_item(category_name, item_name):
@@ -44,6 +45,7 @@ def delete_item(category_name, item_name):
         # If logged in user is not same as item creator
         else:
             return create_message_response('Unauthorized access', 400)
+
 
 # 3. Edit item
 @item_api.route('/catalog/<string:category_name>/<string:item_name>/edit', methods=['PUT'])
