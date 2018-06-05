@@ -7,7 +7,12 @@ from session import session
 
 catalog_api = Blueprint('catalog_api', __name__)
 
+# Operations on the Catalog
+# 1. Get list of categories
+# 2. Get list of latest 10 items
 
+
+# 1. Get list of categories
 @catalog_api.route('/catalog/', methods=['GET'])
 def category_list():
     # Get list of categories
@@ -17,6 +22,7 @@ def category_list():
     return response
 
 
+# 2. Get list of latest 10 items
 @catalog_api.route('/catalog/latest', methods=['GET'])
 def latest():
     # Get latest 10 items
